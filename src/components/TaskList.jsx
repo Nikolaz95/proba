@@ -4,20 +4,7 @@ import React, { useState } from 'react'
 import TaskCard from './TaskCard';
 import BoxCard from './BoxCard';
 
-const UnderHead = ({ info }) => {
-
-    /* 
-    
-    1The current state of this state variable, initially set to the initial state you provided.
-    [tasks ovo je stari zadani 1, setTasks set-pa dalje je nova funckija 2]
-    2The set function that lets you change it to any other value in response to interaction.
- */
-
-    const [tasks, setTasks] = useState([
-        { id: 1, name: "nikola", completed: false },
-        { id: 221312, name: "peor", completed: true },
-        { id: 3, name: "Alokin", completed: false }
-    ]);
+const UnderHead = ({ tasks, setTasks }) => {
 
     const [show, setSwow] = useState(true)
 
